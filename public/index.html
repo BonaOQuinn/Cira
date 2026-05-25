@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ♥</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="timeline.css">
+</head>
+
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <!-- LANDING PAGE WITH ENVELOPE -->
+    <div class="landing-page" id="landingPage">
+        <div class="landing-message">Happy Birthday Cira!</div>
+        <div class="envelope-wrapper" id="envelopeWrapper">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            <div class="birthday-card" id="birthdayCard">
+                <p id="cardMessage">Happy Birthday to the infamous Cira Ruby Rebecca O'QUINN,<br>
+                    We miss you every day.<br>
+                    We love you ❤️</p>
+                <button class="continue-btn" id="continueBtn">click→</button>
+            </div>
+            <div class="click-hint">Click to open ✨</div>
+        </div>
+    </div>
+
+    <!-- TIMELINE PAGE -->
+    <div class="timeline-page" id="timelinePage">
+        <div class="header">
+            <h1>Happy 29th Birthday ♥</h1>
+            <p>Princess Cira to Queen Cira</p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="photo-display">
+                <img id="timelinePhoto" src="images/Jolie0.jpg" alt="Timeline Photo">
+                <video id="timelineVideo" style="display:none; width:100%; height:100%; object-fit:contain;" controls
+                    playsinline></video>
+                <div class="caption" id="photoCaption">Baby Jolie✨</div>
+            </div>
+
+            <div class="slider-section">
+                <div class="slider-label">Slide through the years →</div>
+                <div class="slider-wrapper">
+                    <div class="age-markers">
+                        <span class="age-marker">0</span>
+                        <span class="age-marker">4</span>
+                        <span class="age-marker">8</span>
+                        <span class="age-marker">12</span>
+                        <span class="age-marker">16</span>
+                        <span class="age-marker">20</span>
+                        <span class="age-marker">25</span>
+                        <span class="age-marker">29</span>
+                    </div>
+                    <input type="range" min="0" max="290" value="0" step="1" id="timelineSlider">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="landing.js"></script>
+    <script src="timeline.js"></script>
+</body>
+
+</html>
